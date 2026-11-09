@@ -20,9 +20,9 @@
 
 ## 安装
 
-已上架 [Obsidian 社区目录](https://community.obsidian.md/plugins/html-coursebook)。在「设置 → 第三方插件 → 浏览」中搜索 **HTML Coursebook** 即可安装。
+[Obsidian 社区网页](https://community.obsidian.md/plugins/html-coursebook)已公开。截至 2026 年 11 月 9 日，Obsidian 1.15.0 使用的安装目录仍未收录本插件，因此客户端插件市场暂时搜不到。请先按下面的步骤手动安装。网页公开不代表客户端已经可以搜索安装。
 
-也可手动安装：
+手动安装：
 
 从 [GitHub Releases](https://github.com/gyula-coder/obsidian-html-coursebook/releases/latest) 下载 `main.js`、`manifest.json`、`styles.css`，放入目标仓库的：
 
