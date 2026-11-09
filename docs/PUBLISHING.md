@@ -1,8 +1,8 @@
 # Publishing HTML Coursebook
 
-Planned repository: `gyula-coder/obsidian-html-coursebook`.
+Repository: `gyula-coder/obsidian-html-coursebook`.
 Plugin identifier: `html-coursebook`.
-Prepared release: `0.1.1`.
+Release: `0.1.1`.
 License: MIT.
 
 ## Local preparation
@@ -12,7 +12,7 @@ npm ci
 npm run validate
 ```
 
-Review `manifest.json`, `LICENSE`, both READMEs and the release notes before publication. Only the plugin source and synthetic demo belong in this repository. Do not upload a personal vault, the Motion Atlas course, local screenshots containing other notes, `.obsidian/`, credentials or `node_modules/`.
+Review `manifest.json`, `LICENSE`, both READMEs and the release notes before publication. Only the plugin source and synthetic demo belong in this repository. Do not upload a personal vault, private courses, local screenshots containing other notes, `.obsidian/`, credentials or `node_modules/`.
 
 The included official Obsidian ESLint configuration checks the code and metadata. Passing these local checks does not mean the community directory has approved the entry.
 
@@ -20,7 +20,7 @@ The included official Obsidian ESLint configuration checks the code and metadata
 
 The public repository must contain the readable source, manifest, README and license. Keep the checked-in `main.js` reproducible with `npm run build`.
 
-Create a public repository at the planned location, commit and push the source to `main`, then push a tag named exactly `0.1.1`. The tag must match the manifest version, with no `v` prefix.
+Create a public repository at this location, commit and push the source to `main`, then push a tag named exactly `0.1.1`. The tag must match the manifest version, with no `v` prefix.
 
 The release workflow validates the build, then publishes these binary attachments:
 

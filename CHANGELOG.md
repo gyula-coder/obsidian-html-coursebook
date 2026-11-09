@@ -6,7 +6,7 @@
 - Follow Obsidian's UI language, with English and Simplified Chinese strings.
 - Adopt declarative, searchable settings on Obsidian 1.15.0.
 - Validate persisted settings and guest messages before reading their fields.
-- Preserve workspace view locations during plugin unload.
+- Use Obsidian's registered-view lifecycle for cleanup.
 - Include a synthetic interactive demo for testing without personal vault content.
 
 ## 0.1.0

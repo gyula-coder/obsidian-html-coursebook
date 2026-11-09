@@ -20,7 +20,7 @@
 
 ## 安装
 
-将发布包内的 `html-coursebook` 文件夹放入目标仓库的：
+从 [GitHub Releases](https://github.com/gyula-coder/obsidian-html-coursebook/releases/latest) 下载 `main.js`、`manifest.json`、`styles.css`，放入目标仓库的：
 
 ```text
 <vault>/.obsidian/plugins/html-coursebook/
@@ -56,7 +56,7 @@ npm run validate
 
 ## 发布状态与许可
 
-版本 0.1.1；预定仓库为 https://github.com/gyula-coder/obsidian-html-coursebook 。目前尚未上传 GitHub，也未进入 Obsidian 社区目录。发布流程见 [PUBLISHING.md](docs/PUBLISHING.md)。
+版本 0.1.1；源码已发布到 [GitHub](https://github.com/gyula-coder/obsidian-html-coursebook)。Linux、macOS、Windows 的 CI 构建与测试均已通过；桌面界面仅在 macOS 手动验证。目前尚未进入 Obsidian 社区目录。发布流程见 [PUBLISHING.md](docs/PUBLISHING.md)。
 
 采用 [MIT 许可证](LICENSE)。界面跟随 Obsidian 语言：中文环境显示简体中文，其他环境显示英文。
 

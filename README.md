@@ -33,7 +33,7 @@ No conversion, packing, local server or Web Viewer core plugin is required for s
 
 This plugin is not yet published in the Obsidian community directory.
 
-Download `main.js`, `manifest.json` and `styles.css` from a GitHub release, or build them from source. Place the three files in:
+Download `main.js`, `manifest.json` and `styles.css` from the [latest GitHub release](https://github.com/gyula-coder/obsidian-html-coursebook/releases/latest), or build them from source. Place the three files in:
 
 ```text
 <vault>/.obsidian/plugins/html-coursebook/
@@ -83,7 +83,7 @@ Validation runs the official Obsidian ESLint rules, type checking, domain tests,
 
 `src/core.ts` contains discovery, path and search logic. `src/main.ts` contains the Files-pane adapter, settings and reader. Source files are not rewritten during reading. The public demo under `demo/` contains only synthetic content.
 
-The GitHub Actions configuration checks the build on Linux, macOS and Windows. These workflows have not run until the repository is pushed. An exact semantic version tag such as `0.1.1` triggers release creation with the three installation assets. See [publishing notes](docs/PUBLISHING.md).
+The GitHub Actions configuration checks the build on Linux, macOS and Windows. All three CI platforms have passed validation; this checks the build and tests, not the desktop UI on those systems. An exact semantic version tag such as `0.1.1` triggers release creation with the three installation assets. See [publishing notes](docs/PUBLISHING.md).
 
 ## License
 
