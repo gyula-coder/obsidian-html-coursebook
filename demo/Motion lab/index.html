@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Motion lab · HTML Coursebook demo</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <script defer src="assets/app.js"></script>
+</head>
+<body>
+  <main>
+    <p class="eyebrow">HTML COURSEBOOK / INTERACTIVE DEMO</p>
+    <h1>A folder.<br>A complete lesson.</h1>
+    <p class="intro">Keep your HTML, scripts and assets together. Open the whole project as one document.</p>
+    <section aria-labelledby="experiment-title">
+      <div class="section-heading"><span>01 / EXPERIMENT</span><span id="value">50%</span></div>
+      <h2 id="experiment-title">Move through a keyframe</h2>
+      <div class="stage" aria-hidden="true"><div class="track"></div><div id="dot"></div></div>
+      <label for="time">Animation progress</label>
+      <input id="time" type="range" min="0" max="100" value="50">
+      <div class="buttons"><button id="play" type="button">Play animation</button><button id="reset" type="button">Reset</button></div>
+    </section>
+    <div class="notes"><h2>Everything stays local.</h2><p>This synthetic lesson uses a separate stylesheet and script, both loaded through relative paths. The animation is real JavaScript. No server, network or external library is needed.</p><p class="search-term">Search example: keyframe interpolation · 关键帧插值</p></div>
+  </main>
+</body>
+</html>

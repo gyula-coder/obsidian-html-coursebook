@@ -1,0 +1,35 @@
+name: Release
+
+on:
+  push:
+    tags: ["*.*.*"]
+
+permissions:
+  contents: read
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run validate
+      - run: git diff --exit-code -- main.js
+      - name: Publish installation files
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PLUGIN_TAG: ${{ github.ref_name }}
+          PLUGIN_REPOSITORY: ${{ github.repository }}
+        run: >-
+          gh release create "$PLUGIN_TAG" main.js manifest.json styles.css
+          --repo "$PLUGIN_REPOSITORY" --verify-tag
+          --title "HTML Coursebook $PLUGIN_TAG"
+          --notes-file "docs/releases/$PLUGIN_TAG.md"
