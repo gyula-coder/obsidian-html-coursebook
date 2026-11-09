@@ -1,7 +1,7 @@
 {
   "id": "html-coursebook",
   "name": "HTML Coursebook",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "minAppVersion": "1.15.0",
   "description": "Treat local HTML project folders as single interactive documents, with full-text search and live refresh.",
   "author": "gyula-coder",

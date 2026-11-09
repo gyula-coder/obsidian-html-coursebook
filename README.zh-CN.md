@@ -33,6 +33,8 @@
 
 ## 内容与兼容范围
 
+- 目录识别会枚举当前仓库的文件路径；课件搜索读取已识别的入口 HTML。仅在你选择「复制课件链接」时写入剪贴板，不读取剪贴板。
+
 - 原始课件仍是普通文件夹，可由 agent 继续修改。插件不转换或重写课件内容；禁用后文件树恢复普通文件夹显示。
 - 课件在独立的 Electron 网页视图中运行，支持本地 CSS、JavaScript、图片、Canvas、Lottie 和 Chromium 支持的媒体格式。网页环境未启用 Node 集成，也没有注入能访问仓库的桥接 API。
 - 外部 HTTP、HTTPS 和邮件链接由默认浏览器或应用处理。需要后端服务、npm 开发服务器或远程依赖的工程，仍需各自的运行环境。
@@ -56,7 +58,7 @@ npm run validate
 
 ## 发布状态与许可
 
-版本 0.1.1；源码已发布到 [GitHub](https://github.com/gyula-coder/obsidian-html-coursebook)。Linux、macOS、Windows 的 CI 构建与测试均已通过；桌面界面仅在 macOS 手动验证。目前尚未进入 Obsidian 社区目录。发布流程见 [PUBLISHING.md](docs/PUBLISHING.md)。
+版本 0.1.2；源码已发布到 [GitHub](https://github.com/gyula-coder/obsidian-html-coursebook)。Linux、macOS、Windows 的 CI 构建与测试均已通过；桌面界面仅在 macOS 手动验证。目前尚未进入 Obsidian 社区目录。发布流程见 [PUBLISHING.md](docs/PUBLISHING.md)。
 
 采用 [MIT 许可证](LICENSE)。界面跟随 Obsidian 语言：中文环境显示简体中文，其他环境显示英文。
 

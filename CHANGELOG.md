@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.2
+
+- Hide course resources with more specific, Files-pane-scoped selectors instead of CSS `!important`.
+- Generate signed GitHub artifact attestations for all three installation files in the release workflow.
+
 ## 0.1.1
 
 - Prepare the first public release with MIT licensing, bilingual documentation and reproducible CI/release workflows.

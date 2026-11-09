@@ -1,9 +1,9 @@
 /* Only recognized course folders receive these classes. Native folders are untouched. */
-.nav-folder.hc-document-bundle > :not(.nav-folder-title) {
-  display: none !important;
+.workspace-leaf-content[data-type="file-explorer"] .nav-folder.hc-document-bundle > :not(.nav-folder-title) {
+  display: none;
 }
-.hc-document-row > .collapse-icon {
-  display: none !important;
+.workspace-leaf-content[data-type="file-explorer"] .nav-folder-title.hc-document-row > .collapse-icon {
+  display: none;
 }
 .hc-document-row {
   gap: 6px;

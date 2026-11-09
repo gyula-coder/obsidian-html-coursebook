@@ -2,7 +2,7 @@
 
 Repository: `gyula-coder/obsidian-html-coursebook`.
 Plugin identifier: `html-coursebook`.
-Release: `0.1.1`.
+Release: `0.1.2`.
 License: MIT.
 
 ## Local preparation
@@ -20,7 +20,7 @@ The included official Obsidian ESLint configuration checks the code and metadata
 
 The public repository must contain the readable source, manifest, README and license. Keep the checked-in `main.js` reproducible with `npm run build`.
 
-Create a public repository at this location, commit and push the source to `main`, then push a tag named exactly `0.1.1`. The tag must match the manifest version, with no `v` prefix.
+Create a public repository at this location, commit and push the source to `main`, then push a tag named exactly `0.1.2`. The tag must match the manifest version, with no `v` prefix.
 
 The release workflow validates the build, then publishes these binary attachments:
 

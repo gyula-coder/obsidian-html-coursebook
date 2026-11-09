@@ -1,6 +1,6 @@
 {
   "name": "obsidian-html-coursebook",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": true,
   "type": "module",
   "description": "Treat local HTML course folders as single documents in Obsidian.",

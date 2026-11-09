@@ -66,6 +66,7 @@ Related projects include [Local HTML View](https://github.com/atlas555/obsidian-
 - **Local files:** course discovery and text indexing are scoped to the current vault. Pages use local `file://` URLs and can reference resources outside their own folder or outside the vault, subject to Chromium's normal file security. The plugin does not enforce a resource boundary around a course. The system-file-manager action reveals a course folder, and the browser action opens its entry file.
 - **Scripts:** local course scripts execute. The guest has Node integration disabled, context isolation and Chromium sandboxing enabled, no custom preload, and no filesystem API bridge to the host. These measures are not an audit of the HTML itself; open only projects you trust.
 - **Privacy:** no telemetry, ads, account requirement, payment or remote dependency for the plugin. The opened page's own behavior is separate.
+- **Discovery and clipboard:** discovery enumerates file paths in the current vault to find course entries. The search index reads recognized entry HTML. The copy-link action writes the selected course link to the clipboard only when requested; the plugin never reads the clipboard.
 - **Search:** the course picker indexes static text from entry HTML. Content created later by JavaScript is not in that index. Use page search for rendered text. Obsidian's native search, graph and backlinks keep their existing indexing behavior.
 - **Live refresh:** reloading resets in-page application state. Turn it off when working with a prototype that holds unsaved data.
 - **Compatibility:** the native Files-pane presentation uses a small guarded integration with Obsidian's internal folder items and DOM. Future app changes or replacement file-tree plugins may require adaptation.
@@ -83,7 +84,7 @@ Validation runs the official Obsidian ESLint rules, type checking, domain tests,
 
 `src/core.ts` contains discovery, path and search logic. `src/main.ts` contains the Files-pane adapter, settings and reader. Source files are not rewritten during reading. The public demo under `demo/` contains only synthetic content.
 
-The GitHub Actions configuration checks the build on Linux, macOS and Windows. All three CI platforms have passed validation; this checks the build and tests, not the desktop UI on those systems. An exact semantic version tag such as `0.1.1` triggers release creation with the three installation assets. See [publishing notes](docs/PUBLISHING.md).
+The GitHub Actions configuration checks the build on Linux, macOS and Windows. All three CI platforms have passed validation; this checks the build and tests, not the desktop UI on those systems. An exact semantic version tag such as `0.1.2` triggers release creation with the three installation assets. See [publishing notes](docs/PUBLISHING.md).
 
 ## License
 
