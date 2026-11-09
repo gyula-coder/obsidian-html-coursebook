@@ -5,6 +5,8 @@ Plugin identifier: `html-coursebook`.
 Release: `0.1.2`.
 License: MIT.
 
+The plugin is listed at [HTML Coursebook](https://community.obsidian.md/plugins/html-coursebook). The initial submission and developer-policy consent are complete; normal releases do not need a new directory submission.
+
 ## Local preparation
 
 ```sh

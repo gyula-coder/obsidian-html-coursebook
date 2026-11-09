@@ -31,7 +31,9 @@ No conversion, packing, local server or Web Viewer core plugin is required for s
 
 ## Install
 
-This plugin is not yet published in the Obsidian community directory.
+Install **HTML Coursebook** from **Settings → Community plugins → Browse** in Obsidian, or open the [community listing](https://community.obsidian.md/plugins/html-coursebook).
+
+For manual installation:
 
 Download `main.js`, `manifest.json` and `styles.css` from the [latest GitHub release](https://github.com/gyula-coder/obsidian-html-coursebook/releases/latest), or build them from source. Place the three files in:
 
